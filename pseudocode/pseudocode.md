@@ -1,7 +1,7 @@
 --- consts ---
 
 -- words based on subject(back to the future) ---
-
+cache words
 --- lines  ---
 
 --- functions for fliping line with letter ---

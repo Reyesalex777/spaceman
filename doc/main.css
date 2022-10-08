@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+body {
+    justify-items: center;
+}
+
+main {
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+button {
+    height: 30px;
+    border: none;
+    
+}
+
+
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
