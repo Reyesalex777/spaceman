@@ -9,8 +9,8 @@ body {
 }
 
 #board {
-  position: absolute; top: 70%; right: 30%;
-  height: 20px;
+  position: absolute; top: 50%; right: 40%;
+  height: 50px;
 }
 
 h1 {
@@ -29,11 +29,12 @@ button {
 button:hover {
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 #newgamebtn {
-  position: absolute; top:17%; right:20%;
-  height: 70px;
+  position: absolute; top:17%; right:10%;
+  height: 50px;
   width: 100px;
   background-color: red;
   color: white;
@@ -43,4 +44,6 @@ button:hover {
 #newgamebtn:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
+
