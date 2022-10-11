@@ -1,5 +1,5 @@
 /*----- constants -----*/
-const words = ['space', 'earth', 'planet', 'universe', 'solar', 'sun', 'moon']; // Word library!
+const words = ['space', 'earth', 'planet', 'universe', 'solar', 'sun', 'moon','superNova', ]; // Word library!
 const MAX_WRONG = 6; // the amount body parts(6)
 
 
@@ -15,11 +15,11 @@ let randWord; //generated random word
 
 
 /*----- stored elements  -----*/
-const playBtn = document.getElementById('newgamebtn');
-const messageEl = document.getElementsByClassName('message');
-const attempts = document.getElementsByClassName('lives');
+const playBtn = document.getElementById('#newgamebtn');
+const messageEl = document.querySelector('.message');
+const attempts = document.querySelector('.lives');
 const letters = [...document.querySelectorAll('section > button')];
-const secretWord = document.getElementsByClassName('secretWord');
+const secretWord = document.querySelector('.secretword');
 
 
 
@@ -52,11 +52,11 @@ playBtn.addEventListener('click', init);
   
   function renderMessage() {
     if (gameStatus === 'W') {
-      messageEl.textContent = 'You guessed right!'
+      messageEl.textContent = `You guessed right!`
     } else if (gameStatus === 'L') {
-      messageEl.textContent = 'you ran out of guesses, play again!'
+      messageEl.textContent = `you ran out of guesses, the word was ${secretWord}, play again!`
     } else {
-      messageEl.textContent = `${MAX_WRONG - wrongGuesses.length} wrong guesses left`;
+      messageEl.textContent = `${MAX_WRONG - wrongGuesses.length} lives left`;
     }
   }
   
@@ -71,7 +71,7 @@ playBtn.addEventListener('click', init);
       } else {
         btn.className = '';
       }
-    })
+    });
     playBtn.style.visibility = gameStatus ? 'visible' : 'hidden';
   }
   
