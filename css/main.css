@@ -47,3 +47,10 @@ button:hover {
   cursor: pointer;
 }
 
+.correct {
+background-color: blue;
+}
+
+.wrong {
+  background-color: red;
+}
