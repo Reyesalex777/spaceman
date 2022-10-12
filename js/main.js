@@ -1,6 +1,6 @@
 /*----- constants -----*/
 const words = ['space', 'earth', 'planet', 'universe', 'solar', 'sun', 'moon','superNova', ]; // Word library!
-const MAX_WRONG = 6; // the amount body parts(6)
+const MAX_WRONG = 5; // the amount body parts(6)
 
 
 
@@ -15,11 +15,11 @@ let randWord; //generated random word
 
 
 /*----- stored elements  -----*/
-const playBtn = document.getElementById('#newgamebtn');
-const messageEl = document.querySelector('.message');
-const attempts = document.querySelector('.lives');
+const playBtn = document.getElementById('newgamebtn');
+const messageEl = document.querySelector('message');
+const attempts = document.querySelector('lives');
 const letters = [...document.querySelectorAll('section > button')];
-const secretWord = document.querySelector('.secretword');
+const secretWord = document.querySelector('secretword');
 
 
 
@@ -30,7 +30,6 @@ playBtn.addEventListener('click', init);
 
 
 
-
   /*----- functions -----*/
 
   init();
@@ -38,7 +37,8 @@ playBtn.addEventListener('click', init);
   function init() {
     wrongGuesses = [];
     const maxIdx = Math.floor(Math.random * words.length);
-    randWord = words[maxIdx].toUpperCase().split('');
+    console.log(guess);
+    randWord = words[maxIdx].toUpperCase().split('')
     guess = randWord.map(ltr => ltr === ' ' ? ' ' : '_');
     gameStatus = null;
     render();
@@ -56,12 +56,12 @@ playBtn.addEventListener('click', init);
     } else if (gameStatus === 'L') {
       messageEl.textContent = `you ran out of guesses, the word was ${secretWord}, play again!`
     } else {
-      messageEl.textContent = `${MAX_WRONG - wrongGuesses.length} lives left`;
+      messageEl.textContent = `${MAX_WRONG - wrongGuesses.length + 1} lives left`;
     }
   }
   
   function renderBtn() {
-    letterBtn.forEach(function(btn) {
+    letters.forEach(function(btn) {
       const ltr = btn.textContent;
       // if wrongGuesses includes letter set letter to active
       if (wrongGuesses.includes(ltr)) {
@@ -86,15 +86,15 @@ playBtn.addEventListener('click', init);
       guess.includes(letters)
     ) return;
   
-    if (randWord.includes(letters)) {
+    if (secretWord.includes(letters)) {
       //if guess is correct
-      randWord.forEach(function(char, idx) {
+      secretWord.forEach(function(char, idx) {
         if (char === letters) guess[idx] = ltr
       }); 
       } else {
         wrongGuesses.push(letters);
       }
-      gameStatus = getGameStatus()
+      gameStatus = getGameStatus();
       render();
     }
 
