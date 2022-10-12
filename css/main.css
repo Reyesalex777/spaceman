@@ -1,54 +1,56 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    align-items: center;
-  }
-  
-  section {
-    position: absolute; top: 50%; right: 40%;
-    height: 50px;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 50px;
-  }
-  
-  h2 {
-    text-align: center;
-    padding: 15px;
-    color: black;
-  }
-  
-  h3 {
-    text-align: center;
-    padding: 15px;
-    color: black;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 
-  
-  
-  section > button {
-    height: 30px;
-    border: none;
-    color: black;
-    background-color: white;
-    margin: 1%;
-    font-size:25px;
-    /* border: solid red; */
+body {
+  align-items: center;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  padding: 15px;
+  color: black;
+}
+
+section>button {
+  height: 30px;
+  border: none;
+  color: black;
+  background-color: white;
+  margin: 1%;
+  font-size: 25px;
+  /* border: solid red; */
 }
 
 button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 #newgamebtn {
-  position: absolute; top:17%; right:10%;
+  position: absolute;
+  top: 17%;
+  right: 10%;
   height: 50px;
   width: 100px;
   background-color: red;
@@ -63,11 +65,13 @@ button:hover {
 }
 
 .correct {
-background-color: blue;
+  background-color: blue;
+  color: blue;
 }
 
 .wrong {
   background-color: red;
+  color: red;
 }
 
 IMGS {
