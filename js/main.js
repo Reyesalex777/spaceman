@@ -52,11 +52,11 @@ function render() {
 
 function renderMessage() {
   if (gameStatus === 'W') {
-    messageEl.textContent = `You guessed right!`
+    messageEl.textContent = `Congrats, you guessed right! You Win!`
   } else if (gameStatus === 'L') {
-    messageEl.textContent = `you ran out of guesses, the word was ${randWord.join('')}, play again!`
+    messageEl.textContent = `You ran out of guesses, the word was ${randWord.join('')}, Play Again!`
   } else {
-    messageEl.textContent = `${MAX_WRONG - wrongGuesses.length + 1} lives left`;
+    messageEl.textContent = `${MAX_WRONG - wrongGuesses.length + 1} Guesses left`;
   }
 }
 
