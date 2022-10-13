@@ -5,6 +5,7 @@
 
 body {
   align-items: center;
+  background-color: white;
 }
 
 section {
@@ -13,25 +14,47 @@ section {
   margin-top: 50px;
 }
 
-#clipped-title1 h1{
+.correct {
+  background-color: url(../texture/spacetexture.jpg) no-repeat center center;
+  color: rgb(6, 244, 6);
+}
+
+.correct:hover {
+  background-color: blue;
+  color: greenyellow;
+}
+
+.wrong {
+  background-color: red;
+  color: red;
+  visibility: hidden;
+}
+
+.wrong:hover {
+  background-color: red;
+  color:red;
+  visibility: hidden;
+}
+
+#clipped-title1 h1 {
   /* text-align: center;
   font-size: 70px;
   letter-spacing: 20px; */
   font-size: 150px;
-	font-family: Anton, sans-serif;
-	text-align: center;
-	-webkit-transition: text-shadow 1s ease;
-	text-shadow: 0 0 1px rgba(0,0,0,.1);
-	margin: 0;
-	padding: 0;
+  font-family: Anton, sans-serif;
+  text-align: center;
+  -webkit-transition: text-shadow 1s ease;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+  margin: 0;
+  padding: 0;
 }
 
 #clipped-title1 {
-background: url(../texture/spacetexture.jpg) no-repeat center center;
-background-size: cover;
-color: #fff;
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
+  background: url(../texture/spacetexture.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 h2 {
@@ -53,11 +76,12 @@ section>button {
   color: black;
   background-color: white;
   margin: 1vmin;
+  font-weight: 900;
   font-size: 30px;
 }
 
 button:hover {
-  background-color: black;
+  background: url(../texture/spacetexture.jpg) no-repeat center center;
   color: white;
   cursor: pointer;
 }
@@ -77,26 +101,6 @@ button:hover {
   background-color: white;
   color: black;
   cursor: pointer;
-}
-
-.correct {
-  background-color: blue;
-  color: blue;
-}
-
-.correct:hover {
-  background-color: blue;
-  color: blue;
-}
-
-.wrong {
-  background-color: red;
-  color: red;
-}
-
-.wrong:hover {
-  background-color: red;
-  color: red;
 }
 
 img {
