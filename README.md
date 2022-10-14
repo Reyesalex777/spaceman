@@ -26,10 +26,7 @@ The name of the game is <a href="https://reyesalex777.github.io/spaceman/">SPACE
 
   | Description | Screenshot | 
   |:------------:|-----------| 
-  | <h3>ERD</h3> | <img
-    src="https://i.imgur.com/rclPcaT.png"
-    width="700"
-  /> |
+  | <h3>ERD</h3> | <img src="https://i.imgur.com/rclPcaT.png" width="700"> |
 
 </details>
 
@@ -38,10 +35,7 @@ The name of the game is <a href="https://reyesalex777.github.io/spaceman/">SPACE
 
   |    Description    | Screenshot | 
   |:-----------------:|-------------| 
-  | <h3 align="center">Wireframe</h3> | <img
-    src="https://i.imgur.com/O8iBKzx.png"
-    width="700"
-  /> |
+  | <h3 align="center">Wireframe</h3> | <img src="https://i.imgur.com/O8iBKzx.png" width="700"> |
 </details>
 
 ## :computer: Technologies Used
