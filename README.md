@@ -13,8 +13,6 @@
 
 [![GitHub Badge](https://img.shields.io/badge/-@reyesalex777-junglegreen?style=flat&logo=GitHub&logoColor=black)](https://github.com/reyesalex777)
 
- <img src="https://i.imgur.com/rclPcaT.png">
-
 ## :pencil: Description
 
 
