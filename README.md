@@ -22,11 +22,11 @@ The name of the game is <a href="https://reyesalex777.github.io/spaceman/">SPACE
 
 </div>
 <details>
-  <summary>:bar_chart: ERD</summary>
+  <summary>:video_game: Landing page</summary>
 
   | Description | Screenshot | 
   |:------------:|-----------| 
-  | <h3>ERD</h3> | <img src="https://i.imgur.com/rclPcaT.png" width="700"> |
+  | <h3>Game</h3> | <img src="https://i.imgur.com/rclPcaT.png" width="700"> |
 
 </details>
 
