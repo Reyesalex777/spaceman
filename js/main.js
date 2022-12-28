@@ -1,5 +1,6 @@
 /*----- constants -----*/
-const words = ['space', 'earth', 'planet', 'universe', 'sun', 'moon', 'supernova', 'star'];
+const words = ['space', 'earth', 'planet', 'universe', 'sun', 'moon', 'supernova', 'star', 'uranus',
+'neptune', 'mars', 'jupiter'];
 const MAX_WRONG = 5;
 
 
