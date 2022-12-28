@@ -46,7 +46,7 @@ function init() {
 
 function render() {
   renderMessage();
-  imgEl.src = `IMG/SPACEMANIMG/spaceman-${wrongGuesses.length}.jpg`;
+  imgEl.src = `image/SPACEMANIMG/spaceman-${wrongGuesses.length}.jpg`;
   secretWord.textContent = guess.join('');
   renderBtn();
 }
