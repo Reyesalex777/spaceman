@@ -1,6 +1,5 @@
 /*----- constants -----*/
-const words = ['space', 'earth', 'planet', 'universe', 'sun', 'moon', 'supernova', 'star', 'uranus',
-'neptune', 'mars', 'jupiter'];
+const words = ['space', 'earth', 'planet', 'universe', 'sun', 'moon', 'supernova', 'star'];
 const MAX_WRONG = 5;
 
 
@@ -46,7 +45,7 @@ function init() {
 
 function render() {
   renderMessage();
-  imgEl.src = `image/SPACEMANIMG/spaceman-${wrongGuesses.length}.jpg`;
+  imgEl.src = `img/spaceman-${wrongGuesses.length}.jpg`;
   secretWord.textContent = guess.join('');
   renderBtn();
 }
